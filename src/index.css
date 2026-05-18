@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-ink text-leaf font-body antialiased;
+  }
+  ::selection {
+    @apply bg-beast-green text-beast-dark;
+  }
+}
+
+@layer components {
+  .section-pad {
+    @apply mx-auto w-full max-w-6xl px-6 sm:px-8;
+  }
+  .pill {
+    @apply inline-flex items-center gap-2 rounded-full border border-cardborder
+      bg-card px-4 py-1.5 text-sm font-semibold tracking-wide;
+  }
+}
+
+/* Subtle dot-grid texture used behind the hero */
+.dotgrid {
+  background-image: radial-gradient(
+    rgba(87, 242, 135, 0.09) 1px,
+    transparent 1px
+  );
+  background-size: 28px 28px;
+}
