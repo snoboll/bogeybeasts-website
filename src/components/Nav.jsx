@@ -25,13 +25,13 @@ export default function Nav() {
       }`}
     >
       <nav className="section-pad flex h-16 items-center justify-between">
-        <Link to="/" className="flex items-center gap-2.5">
+        <Link to="/" className="flex shrink-0 items-center gap-2.5">
           <img
             src="/icon-512.png"
             alt=""
             className="h-9 w-9 rounded-lg ring-1 ring-cardborder"
           />
-          <span className="font-display text-xl font-extrabold tracking-tight">
+          <span className="font-display text-lg font-extrabold tracking-tight sm:text-xl">
             Bogey<span className="text-beast-green">beasts</span>
           </span>
         </Link>
@@ -48,16 +48,16 @@ export default function Nav() {
           ))}
         </div>
 
-        <div className="flex items-center gap-3">
+        <div className="flex shrink-0 items-center gap-2 sm:gap-3">
           <Link
             to="/bogeydex"
-            className="rounded-xl border border-cardborder bg-card px-5 py-2.5 text-sm font-bold text-leaf transition-colors hover:border-beast-green/60"
+            className="whitespace-nowrap rounded-xl border border-cardborder bg-card px-3.5 py-2 text-xs font-bold text-leaf transition-colors hover:border-beast-green/60 sm:px-5 sm:py-2.5 sm:text-sm"
           >
             Bogeydex
           </Link>
           <a
             href="/#get"
-            className="rounded-xl bg-beast-green px-5 py-2.5 text-sm font-bold text-beast-dark transition-transform hover:scale-105"
+            className="whitespace-nowrap rounded-xl bg-beast-green px-3.5 py-2 text-xs font-bold text-beast-dark transition-transform hover:scale-105 sm:px-5 sm:py-2.5 sm:text-sm"
           >
             Get the app
           </a>
